@@ -10,9 +10,7 @@ authors = ["Vik Paruchuri <github@vikas.sh>"]
 readme = "README.md"
 license = "GPL-3.0-or-later"
 keywords = ["pdf", "markdown", "ocr", "nlp"]
-urls = {
-    "Repository": "https://github.com/mgolub2/marker"
-}
+
 
 [project.scripts]
 marker = "convert:main"
