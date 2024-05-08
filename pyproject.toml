@@ -1,5 +1,7 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = [
+    "setuptools>=60",
+    "setuptools-scm>=8.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -45,11 +47,11 @@ marker_benchmark = "benchmark:main"
 marker_chunk_convert = "chunk_convert:main"
 
 
-[project.include]
-data_files = [
-    "convert.py",
-    "convert_single.py",
-    "chunk_convert.sh",
-    "benchmark.py",
-    "chunk_convert.py"
-]
+# [tool.setuptools.package-data]
+# data_files = [
+#     "convert.py",
+#     "convert_single.py",
+#     "chunk_convert.sh",
+#     "benchmark.py",
+#     "chunk_convert.py"
+# ]
