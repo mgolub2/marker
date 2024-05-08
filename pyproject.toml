@@ -1,7 +1,7 @@
 [build-system]
 requires = [
-    "setuptools>=60",
-    "setuptools-scm>=8.0"]
+    "setuptools>=60"
+]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -46,6 +46,8 @@ marker_single = "convert_single:main"
 marker_benchmark = "benchmark:main"
 marker_chunk_convert = "chunk_convert:main"
 
+[tool.setuptools.packages.find]
+where = ["marker"]
 
 # [tool.setuptools.package-data]
 # data_files = [
